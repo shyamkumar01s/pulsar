@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: hsla(75, 20%, 96%, 0.584);
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: cornflowerblue;
+}
+
+.navbar img{
+    background-color: aliceblue;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(232, 236, 237);
+    border-radius: 8px;
+    color: #120c04;
+    padding: 12px ;
+}
+
+p{
+    color: #070603;
+}
+
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col2{
+    flex-basis:50%;
+    min-width: 300px;
+    margin-top: 30px;
+}
+
+
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0 ;
+}
+
+.btn{
+    display: inline-block;
+    background: #070603;
+    color: aliceblue;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background color 0.3s;
+
+}
+
+.btn:hover{
+    background-color: hsl(322, 100%, 88%);
+    color: black;
+}
+
+.commuters{
+    margin: 70px 0;
+
+}
+
+.bike{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.bike img{
+    width: 100%;
+}
+
+.small_container{
+    max-width: 1080p;
+    margin: auto;
+    padding-left: 25px ;
+    padding-right: 25px;
+}
+
+.small_container .bike{
+    border-style: ridge;
+    border-width: 8px;
+    border-color: #070603;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    background-color: hsla(266, 77%, 25%, 0.2);
+    color: #0b0906;
+
+    
+
+}
+
+
+
+.commuters .bike{
+    border-style: ridge;
+    border-width: 8px;
+    border-color: #070603;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    background-color: hsla(266, 77%, 25%, 0.2);
+    
+}
+
+.commuters .bike a{
+    margin-top: 30px;
+}
+
+.stars{
+    color: rgb(205, 1, 35);
+}
+
+
+
+.review{
+    padding-top: 100px;
+
+}
+
+.review .bike{
+    text-align: center;
+    padding:40px 20px ;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5;
+
+}
+
+.review .bike:hover{
+    transform: translateY(-10px) ;
+}
+
+.review img{
+    width:180px;
+    margin-top: 20px;
+    border-radius: 50%;
+    
+
+
+}
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-top {
+      background-color: #1b2d52;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-top a {
+      color: rgb(60, 123, 239);
+      text-decoration: none;
+    }
+
+    .footer {
+      background-color: cornflowerblue;
+      color: white;
+      padding: 40px 20px 20px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .footer h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ffffff33;
+      padding-bottom: 5px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer ul li {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .footer ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-icons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .footer-icons i {
+      font-size: 24px;
+      margin: 0 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .footer-icons i:hover {
+      color: #00bfff;
+    }
+
+    .footer-bottom {
+      background-color: #005bb5;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+      
+    }

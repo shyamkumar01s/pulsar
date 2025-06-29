@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAJAJ PULSAR RS200</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: hsla(75, 20%, 96%, 0.584);
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: cornflowerblue;
+}
+
+.navbar img{
+    background-color: aliceblue;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(232, 236, 237);
+    border-radius: 8px;
+    color: #120c04;
+    padding: 12px ;
+}
+
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .bike-description{
+      width: 90%;
+      margin: 25px auto; 
+      border: 2px solid hsl(0, 0%, 100%);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      
+    }
+
+    .topic-border{
+      
+      background-color: rgb(203, 209, 222);
+    }
+
+    h2{
+      background-color: rgb(189, 208, 244);
+      padding: 20px 0;
+    }
+
+    .carousel-inner{
+      width: 65%;
+    
+    }
+
+     table {
+      width: 60%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 3px solid #444;
+      padding: 10px 15px;
+      text-align: left;
+      background-color: rgb(211, 222, 233);
+    }
+    th {
+      background-color: #bcdbfc;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+    color: #1a237e;
+    margin: 25px 500px;
+    border-color: #1a237e;
+    border-style: groove;
+    border-width: 3px;
+    padding: 5px;
+    }
+
+    h5 {
+      color: #0d47a1;
+      margin-top: 20px;
+    }
+    hr {
+      border: none;
+      border-top: 3px solid #ccc;
+      margin: 10px 0 20px;
+    }
+    section {
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 25px;
+    }
+
+      body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-top {
+      background-color: #1b2d52;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-top a {
+      color: rgb(60, 123, 239);
+      text-decoration: none;
+    }
+
+    .footer {
+      background-color: cornflowerblue;
+      color: white;
+      padding: 40px 20px 20px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .footer h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ffffff33;
+      padding-bottom: 5px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer ul li {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .footer ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-icons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .footer-icons i {
+      font-size: 24px;
+      margin: 0 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .footer-icons i:hover {
+      color: #00bfff;
+    }
+
+    .footer-bottom {
+      background-color: #005bb5;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+      
+    }
+
+    .stars{
+      color: rgb(252, 113, 38);
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- start of navbar -->
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="Bajaj-Logo.png" width="125px">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="bikes.html">Bikes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- End of nav bar -->
+
+
+<!-- For Caurosel -->
+<center>
+<h1>BAJAJ PULSAR RS200</h1>
+</center>
+<div class="bike-description">
+    <center>
+
+
+    <div id="carouselExample" class="carousel slide custom-carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="RS200 SIDE VIEWWW.webp" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="pulsarrs200rsfrontview.webp" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="Bajaj-Pulsar-RS200 REAR VIEWWWWWW.avif" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div></center>
+  <center>
+<div class="topic-border"> 
+  <h2 class="bikein-name">Bajaj pulsar RS 200 Summary
+    <div class="stars">
+                      <i class="fa fa-star"></i>       
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i> 
+                        <i class="fa fa-star"></i>   
+                        <i class="fa fa-star"></i>
+                        </div>
+  </h2>
+</div>
+</center>
+<section>
+    <h5> Price</h5>
+    <hr>
+    <p>
+    Bajaj Pulsar RS 200 price for its variant - Pulsar RS 200 Standard starts at Rs. 2,10,410. The price for the other variant - Pulsar RS 200 Standard [2025] is Rs. 2,21,893. The mentioned Pulsar RS 200 prices are the on-road price of Chennai.   
+    </p>
+  </section>
+
+  <section>
+    <h5>About</h5>
+    <hr>
+    <p>
+    Bajaj Pulsar RS 200 is a sports bike available in 2 variants and 6 colours. The Bajaj Pulsar RS 200 is powered by 199.5cc BS6 engine which develops a power of 24.1 bhp and a torque of 18.7 Nm. With both front and rear disc brakes, Bajaj Pulsar RS 200 comes up with anti-locking braking system. This Pulsar RS 200 bike weighs 167 kg and has a fuel tank capacity of 13 liters.
+    
+    </p>
+  </section>
+
+<div class="topic-border"> 
+  <center>
+  <h2>Specification</h2>
+  </center>
+</div>
+<center>
+<table border="1" cellpadding="8" cellspacing="0">
+  
+  <tr>
+    <th>Specification</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td>Mileage (Overall)</td>
+    <td>35 kmpl</td>
+  </tr>
+  <tr>
+    <td>Displacement</td>
+    <td>199.5 cc</td>
+  </tr>
+  <tr>
+    <td>Engine Type</td>
+    <td>Liquid Cooled, Single Spark 4-Valve, FI Engine</td>
+  </tr>
+  <tr>
+    <td>No. of Cylinders</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Max Power</td>
+    <td>24.5 PS @ 9750 rpm</td>
+  </tr>
+  <tr>
+    <td>Max Torque</td>
+    <td>18.74 Nm @ 8000 rpm</td>
+  </tr>
+  <tr>
+    <td>Front Brake</td>
+    <td>Disc</td>
+  </tr>
+  <tr>
+    <td>Rear Brake</td>
+    <td>Disc</td>
+  </tr>
+  <tr>
+    <td>Fuel Capacity</td>
+    <td>13 L</td>
+  </tr>
+  <tr>
+    <td>Body Type</td>
+    <td>Sports Bikes</td>
+  </tr>
+</table>
+</center>
+
+<center>
+  <h2>Bajaj Pulsar RS 200 Overview</h2>
+</center>
+
+<section>
+    <h5>Design</h5>
+    <hr>
+    <p>
+      The Bajaj Pulsar RS200 features a full-faired, aggressive design inspired by racing motorcycles. It comes with sharp lines, a split LED headlamp, and aerodynamic styling that enhances both aesthetics and wind protection.
+    </p>
+    
+  </section>
+
+  <section>
+    <h5>Features</h5>
+    <hr>
+    <p>
+      It boasts an all-LED lighting setup, a fully digital instrument cluster, dual-channel ABS, slipper clutch, and a USB charging port. The RS200 also includes features like a projector headlamp and sporty graphics, elevating its premium feel.
+    </p>
+   
+  </section>
+
+  <section>
+    <h5>Riding Posture & Comfort</h5>
+    <hr>
+    <p>
+      The RS200 offers a sporty yet manageable riding posture with clip-on handlebars and a raised tail section. The split seats are well-cushioned, providing comfort for both rider and pillion during longer rides.
+    </p>
+   
+  </section>
+
+  <section>
+    <h5>Engine, Mileage & Performance</h5>
+    <hr>
+    <p>
+      Powered by a 199.5cc liquid-cooled, single-cylinder engine delivering 24.5 PS at 9750 rpm and 18.6 Nm of torque, the RS200 is paired with a 6-speed gearbox and slipper clutch. It offers brisk acceleration and a top speed close to 140 km/h, with mileage around 35–40 kmpl.
+    </p>
+    
+  </section>
+
+  <section>
+    <h5>Handling & Ride Quality</h5>
+    <hr>
+    <p>
+      Equipped with a perimeter frame, USD front forks, and a monoshock at the rear, the Pulsar RS200 delivers sharp handling and excellent stability on corners. The dual-channel ABS ensures safe braking, while the suspension balances comfort and sportiness.
+    </p>
+    
+  </section>
+
+  <section>
+    <h5>Should You Buy Bajaj Pulsar RS200?</h5>
+    <hr>
+    <p>
+      The RS200 is an ideal choice for riders seeking a sporty fully-faired motorcycle with impressive performance and modern features at a competitive price. It suits both daily commuting and weekend spirited rides.
+    </p>
+    
+  </section>
+    
+</div> 
+
+<!-- FOOTER  --> -->
+
+<div class="footer-top">
+    <div><i class="fa fa-phone"></i> Call: <b href="tel:+917219821111">+91 7219821111</b> (9 AM to 8 PM)</div>
+    <div><i class="fa fa-envelope"></i> Write: <b href="mailto:customerservice@bajajauto.co.in">customerservice@bajajauto.co.in</b></div>
+  </div>
+
+  <!-- Footer Content -->
+  <div class="footer">
+    <div class="footer-container">
+      <div>
+        <h3>Motorcycles</h3>
+        <ul>
+          <li>Bajaj Freedom</li>
+          <li>Pulsar</li>
+          <li>Dominar</li>
+          <li>Avenger</li>
+          <li>Platina</li>
+          <li>CT</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Brands</h3>
+        <ul>
+          <li>Bajaj Platina CT100</li>
+          <li>Bajaj Discover</li>
+          <li>Bajaj Pulsar</li>
+          <li>Bajaj N Series</li>
+          <li>Bajaj NS Series</li>
+          <li>Bajaj Dominar</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Customer Service</h3>
+        <ul>
+          <li>Contact Us</li>
+          <li>Spares</li>
+          <li>Owner’s Manual</li>
+          <li>Locate a Dealer</li>
+        </ul>
+      </div>
+      <div>
+        <h3>About Bajaj</h3>
+        <ul>
+          <li>The World’s Favourite Indian</li>
+          <li>75 years of Bajaj Auto</li>
+          <li>Bajaj Team</li>
+          <li>Chairman Emeritus’ Speeches</li>
+          <li>Bajaj Auto & KTM</li>
+          <li>About Bajaj Group</li>
+          <li>Company Network</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Corporate</h3>
+        <ul>
+          <li>Media Centre</li>
+          <li>Corporate Social Responsibility</li>
+          <li>Key Policies</li>
+          <li>Code Of Conduct</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li>Terms & Conditions</li>
+          <li>Disclaimer</li>
+          <li>Privacy and Policy</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="footer-icons">
+      <i class="fa fa-facebook-square"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin-square"></i>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    &copy; 2025 Bajaj Auto Ltd. All rights reserved.
+  </div>
+
+</body>
+
+
+</html>
